@@ -1351,7 +1351,7 @@ border-radius: 4px;
                                 <div class="slider-planet__item">
                                     <div class="slider-planet__header" style="justify-content: center;">
                                         <center>
-                                            <img src="https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/exkxpzcd33p0brlembha" alt="" class="slider-planet__img"
+                                            <img src="{{asset('')}}assets/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/exkxpzcd33p0brlembha" alt="" class="slider-planet__img"
                                                 style="max-width: 100%; height: auto;">
                                         </center>
                                     </div>

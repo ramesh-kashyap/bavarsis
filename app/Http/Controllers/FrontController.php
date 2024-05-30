@@ -12,42 +12,46 @@ class FrontController extends Controller
         return view('main.home');
     }
 
-    public function about()
+    public function referral()
     {
-        return view('main.about');
+        return view('main.referralhub');
     }
 
-    public function services()
+    public function learning()
     {
-        return view('main.services');
+        return view('main.learninghub');
     }
 
-    public function contact()
+    public function documents()
     {
-        return view('main.contact');
+        return view('main.documents');
     }
-    public function faq()
+    public function bonus()
     {
-        return view('main.faq');
+        return view('main.bonushub');
     }
    
-    public function tutorial()
+    public function showroom()
     {
-        return view('main.tutorial');
-    }
-
-    public function team()
-    {
-        return view('main.team');
-    }
-    public function termcandition()
-    {
-        return view('main.term-candition');
+        return view('main.showroom');
     }
 
     public function news()
     {
         return view('main.news');
+    }
+    public function ambassador()
+    {
+        return view('main.ambassador');
+    }
+
+    public function reservehub()
+    {
+        return view('main.reservehub');
+    }
+    public function faq()
+    {
+        return view('main.faq');
     }
 
 
