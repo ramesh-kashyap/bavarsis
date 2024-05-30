@@ -29,6 +29,13 @@ class WithdrawRequest extends Controller
         return $this->dashboard_layout();
     }
 
+    public function arbitrage()
+    {
+      
+        $this->data['page'] = 'user.withdraw.arbitrage';
+        return $this->dashboard_layout();
+    }
+
 
     public function withdrawPrinciple()
     {

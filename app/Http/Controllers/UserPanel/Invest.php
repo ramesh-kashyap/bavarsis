@@ -211,7 +211,12 @@ public function cancel_payment($id)
 
  }
 
-
+ public function spot()
+    {
+      
+        $this->data['page'] = 'user.invest.spot';
+        return $this->dashboard_layout();
+    }
 
     public function confirmDeposit_new(Request $request)
     {

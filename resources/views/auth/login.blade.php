@@ -67,8 +67,11 @@ gap: 20px;
 
             </a></div></div><div class="start__form-inputs">
                 <form   class="signin_validate clasas_form" method="POST"	
-             action="{{route('login')}}"><style type="text/css">.
-              {{ csrf_field() }}
+             action="{{route('login')}}">
+             
+             {{ csrf_field() }}
+             <style type="text/css">.
+             
              form-control{margin-bottom: 25px;}.bg-danger{color: #fff;border-radius: 50px;}.err{color: rgb(208, 60, 60);}</style>
              <!-- <fieldset><table class="table" style=""> --><div class="start__main-inputs-wrapper">
                 <div class="settings__password-new-repeat">	<tr><div class="hide_box_0">

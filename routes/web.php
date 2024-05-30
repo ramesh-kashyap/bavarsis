@@ -105,6 +105,7 @@ Route::any('/SubmitBuyFund', [App\Http\Controllers\UserPanel\AddFund::class, 'Su
 
 // invest
 Route::get('/invest', [App\Http\Controllers\UserPanel\Invest::class, 'index'])->name('user.invest');
+Route::get('/spot', [App\Http\Controllers\UserPanel\Invest::class, 'spot'])->name('user.spot');
 Route::get('/deposit', [App\Http\Controllers\UserPanel\Invest::class, 'deposit'])->name('user.deposit');
 Route::get('/cancel-payment/{id}', [App\Http\Controllers\UserPanel\Invest::class, 'cancel_payment'])->name('user.cancel-payment');
 Route::post('/fundActivation', [App\Http\Controllers\UserPanel\Invest::class, 'fundActivation'])->name('user.fundActivation');
@@ -118,6 +119,7 @@ Route::get('/DepositHistory', [App\Http\Controllers\UserPanel\Invest::class, 'in
 // withdraw
 Route::get('/debitReport', [App\Http\Controllers\UserPanel\WithdrawRequest::class, 'debitReport'])->name('user.debitReport');
 Route::get('/Withdraw', [App\Http\Controllers\UserPanel\WithdrawRequest::class, 'index'])->name('user.Withdraw');
+Route::get('/arbitrage', [App\Http\Controllers\UserPanel\WithdrawRequest::class, 'arbitrage'])->name('user.arbitrage');
 Route::get('/withdrawPrinciple', [App\Http\Controllers\UserPanel\WithdrawRequest::class, 'withdrawPrinciple'])->name('user.withdrawPrinciple');
 
 Route::post('/WithdrawRequest', [App\Http\Controllers\UserPanel\WithdrawRequest::class, 'WithdrawRequest'])->name('user.Withdraw-Request');
@@ -136,6 +138,7 @@ Route::any('/UsrBinaryReport',[App\Http\Controllers\UserPanel\BinaryReport::clas
 
 //bonus
 Route::get('/level-income', [App\Http\Controllers\UserPanel\Bonus::class, 'index'])->name('user.level-income');
+Route::get('/market', [App\Http\Controllers\UserPanel\Bonus::class, 'market'])->name('user.market');
 Route::get('/matching-bonus', [App\Http\Controllers\UserPanel\Bonus::class, 'cashback_income'])->name('user.matching-bonus');
 Route::get('/reward-bonus', [App\Http\Controllers\UserPanel\Bonus::class, 'reward_income'])->name('user.reward-bonus');
 Route::get('/roi-bonus', [App\Http\Controllers\UserPanel\Bonus::class, 'roi_income'])->name('user.roi-bonus');

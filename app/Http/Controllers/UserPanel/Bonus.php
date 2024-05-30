@@ -78,6 +78,15 @@ class Bonus extends Controller
 
     }
 
+
+    public function market()
+    {
+      
+        $this->data['page'] = 'user.bonus.market';
+        return $this->dashboard_layout();
+    }
+
+
     public function activitiesBonus(Request $request)
     {
        $user=Auth::user();
