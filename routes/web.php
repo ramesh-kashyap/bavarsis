@@ -51,14 +51,15 @@ Route::post('/registers', [App\Http\Controllers\Register::class, 'register'])->n
 Route::get('/register_sucess', [App\Http\Controllers\Register::class, 'index'])->name('register_sucess');
 
 Route::get('/Index', [App\Http\Controllers\FrontController::class, 'index'])->name('Index');
-Route::get('/about-us', [App\Http\Controllers\FrontController::class, 'about'])->name('about-us');
-Route::get('/services', [App\Http\Controllers\FrontController::class, 'services'])->name('services');
-Route::get('/contact-us', [App\Http\Controllers\FrontController::class, 'contact'])->name('contact-us');
-Route::get('/faq', [App\Http\Controllers\FrontController::class, 'faq'])->name('faq');
-Route::get('/tutorial', [App\Http\Controllers\FrontController::class, 'tutorial'])->name('tutorial');
-Route::get('/team', [App\Http\Controllers\FrontController::class, 'team'])->name('team');
-Route::get('/term-candition', [App\Http\Controllers\FrontController::class, 'termcandition'])->name('term-candition');
+Route::get('/referralhub', [App\Http\Controllers\FrontController::class, 'referral'])->name('referral');
+Route::get('/learninghub', [App\Http\Controllers\FrontController::class, 'learning'])->name('learning');
+Route::get('/reservehub', [App\Http\Controllers\FrontController::class, 'reservehub'])->name('reservehub');
+Route::get('/bonushub', [App\Http\Controllers\FrontController::class, 'bonus'])->name('bonus');
+Route::get('/showroom', [App\Http\Controllers\FrontController::class, 'showroom'])->name('showroom');
+Route::get('/ambassador', [App\Http\Controllers\FrontController::class, 'ambassador'])->name('ambassador');
 Route::get('/news', [App\Http\Controllers\FrontController::class, 'news'])->name('news');
+Route::get('/documents', [App\Http\Controllers\FrontController::class, 'documents'])->name('documents');
+Route::get('/faq', [App\Http\Controllers\FrontController::class, 'faq'])->name('faq');
 
 
 Route::get('/home', [App\Http\Controllers\UserPanel\Dashboard::class, 'index'])->name('home');
